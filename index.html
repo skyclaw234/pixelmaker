@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Brant Safrit"/>
+        <meta charset="utf-8" />
+        <title>Pixel Art Maker!</title>
+        <!-- Loading Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Prosto+One" rel="stylesheet">
+        <!-- Linking Stylesheet -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- Loading icon fonts from Ionicons and FontAwesome -->
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+    <body>
+
+        <div class="row">
+            <!-- Left Column for Controls -->
+            <div class="left-col">
+                <!-- Section for Canvas Customization -->
+                <h2 class="first-section-header">Customise Canvas</h2>
+                <form id="size_picker">
+                    <div class="label-2 smaller-font">Height</div>
+                    <input type="number" id="input_height" name="height" min="1" max="30" value="24">
+                    <div class="label-2 smaller-font">Width</div>
+                    <input type="number" id="input_width" name="width" min="1" max="30" value="24">
+                    <button type="submit" class="button-1 smaller-font" id="submit-btn">New Canvas</button>
+                </form>
+            
+                <!-- Grid Control Buttons -->
+                <div>
+                    <div class="button-2 smaller-font borderToggleBtn">Toggle Grid</div>
+                    <div class="button-2 smaller-font clearGrid">Clear Canvas</div>
+                    <div class="button-4 addCol larger-font">+</div>
+                    <div class="label-2 smaller-font">Columns</div>
+                    <div class="button-4 removeCol larger-font">-</div>
+                    <div class="button-4 addRow larger-font">+</div>
+                    <div class="label-2 smaller-font">Rows</div>
+                    <div class="button-4 removeRow larger-font">-</div>
+                </div>
+
+                <!-- Color Picker -->
+                <div>
+                    <h2>Pick A Color</h2>
+                    <input type="color" id="color_picker" value="#147aad">
+                </div>
+
+                <!-- Drawing Tools -->
+                <div>
+                    <h2>Create Pixel Art</h2>
+                    <div class="button-3 tools draw active" title="Draw"><i class="ion-edit"></i></div>
+                    <div class="button-3 tools fill" title="Fill"><i class="ion-paintbucket"></i></div>
+                    <div class="button-3 tools erase" title="Erase"><i class="fa fa-eraser"></i></div>
+                </div>
+
+                <!-- Export Options -->
+                <div>
+                    <h2>Export</h2>
+                    <div class="button-1 save" title="Save as PNG"><i class="fa fa-floppy-o"></i></div>
+                </div>
+            </div>
+
+            <!-- Center Column for Canvas Display -->
+            <div class="center-col">
+                <h1>Pixel Art Maker</h1>
+                <table id="pixel_canvas"></table>
+            </div>
+            
+            <!-- Right Column for future color palettes -->
+            <div class="right-col"></div>
+        </div>
+
+        <!-- Scripts for Functionality -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

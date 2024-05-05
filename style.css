@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    background-color: #444;
+}
+
+.row {
+    width: 100%;
+}
+
+.left-col {
+    min-height: 100vh;
+    width: 25%;
+    float: left;
+}
+
+.center-col {
+    background-color: #333;
+    width: 75%; /*change when right-col is added back in*/
+    min-height: 100vh;
+    float: left;
+}
+
+.right-col {
+    display: none;
+    background-color: #444;
+    min-height: 100vh;
+    width: 25%;
+    float: left;
+}
+
+h1 {
+    font-family: "Prosto One", cursive;
+    font-size: 4rem;
+    color: #fff;
+    margin: 1.5rem;
+}
+
+h2 {  
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 16px auto 8px auto;
+}
+
+table {
+    border: 4px solid #888;
+    border-collapse: collapse;
+    margin: 30px auto 60px auto;
+    background-color: #fff;
+}
+
+tr,
+td {
+    border: 1px solid #aaa;
+}
+
+.transparentBorder {
+    border: 1px solid transparent;
+}
+
+tr {
+    height: 18px; 
+}
+
+td {
+    width: 18px;
+}
+
+td:hover {
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+input[type=number] {
+    background-color: #444;
+    height: 40px;
+    width: 43%;
+    margin: 1.5%;
+    border: 0;
+    border-bottom: 1px solid #666;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-left: 20%;
+    outline: none;
+}
+
+input[type=number]:hover {
+    border-bottom: 1px solid #888;
+}
+
+/* feature buttons */
+
+div[class^="button"] {
+    background-color: #666;
+    border: 1px solid #777;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;   
+    margin: 1.5%;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+}
+
+button[class^="button"] {
+    background-color: #666;
+    border: 1px solid #777;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;   
+    margin: 1.5%;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+}
+
+.button-1 {
+    width: 97%;
+}
+
+.button-2 {
+    width: 46%;
+}
+
+.button-3 {
+    width: 29%;
+}
+
+.button-4 {
+    width: 22%;
+}
+
+.active {
+    background-color: #999 !important;
+}
+
+.save {
+    margin-bottom: 40px !important;
+}
+
+div[class^="button"]:hover {
+    background-color: #888;
+}
+
+.label-2 {
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #fff;   
+    margin: 1.5%;
+    padding: 5px;
+    height: 40px;
+    width: 43%;
+}
+
+.smaller-font {
+    font-size: 1.1rem !important;   
+}
+
+.larger-font {
+    font-size: 3rem;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1040px) {
+    .left-col {
+        width: 30%;
+    }
+
+    .center-col {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .left-col {
+        width: 100%;
+    }
+
+    .center-col {
+        width: 100%;
+    }
+
+    h1 {
+        position: fixed;
+        background-color: #333;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 8px;
+        box-shadow: 0 .5rem 1rem rgba(50,50,50,0.5);
+    }
+
+    .first-section-header {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 585px) {
+
+    .first-section-header {
+        margin-top: 160px;
+    }
+
+    h1 {
+        font-size: 3.25rem;
+    }
+
+}
